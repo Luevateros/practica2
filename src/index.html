@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2 - Front-end</title>
+    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script type="text/javascript">
+
+        // Cambia el color del título
+        $(function(){
+            $("input[type=color][id=color-titulo-btn]").change(function(e){ 
+                document.getElementById("titulo-nota").style.color = e.target.value;
+            });
+        });
+
+        // Cambia el color del cuerpo
+        $(function(){
+            $("input[type=color][id=color-cuerpo-btn]").change(function(e){ 
+                document.getElementById("cuerpo-nota").style.color = e.target.value;
+            });
+        });
+
+    </script>
+</head>
+<body>
+
+    <div class="center">
+        <h2>Bienvenido a NOTAS v1.0</h2>
+
+        <div class="flex-container">
+
+            <!-- Forma -->
+            <div class="flex-child">
+                <form class="forma" action="">
+                    <input type="text" id="titulo-nota" placeholder="Título">
+                    <textarea id="cuerpo-nota" placeholder="Escribe aquí"></textarea>
+                    <div class="color-titulo">
+                        <input type="color" id="color-titulo-btn"/>
+                        <button>Cambiar color</button>
+                    </div>
+                    <div class="color-cuerpo">
+                        <input type="color" id="color-cuerpo-btn"/>
+                        <button>Cambiar color</button> 
+                    </div>
+                    <button id="limpiar-btn">Limpiar texto</button>        
+                    <button id="guardar-btn">Guardar</button>
+                </form>
+            </div>
+
+            <!-- Notas -->
+            <div class="flex-child" id="notas">
+                <div id="notas">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
