@@ -1,0 +1,133 @@
+body {
+    font-family: monospace; 
+    background-image: linear-gradient(to right, white , #f1b462);
+}
+
+.flex-container {
+    display: flex;
+}
+
+.center {
+    margin-left: 5%;
+    margin-top: 40px;
+}
+
+.flex-child {
+    background-color: #65a0ec;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}  
+
+.flex-child:first-child {
+    margin-right: 10%;
+    width: 400px;
+    height: 240px;
+} 
+
+.forma {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(45px, auto);
+    padding: 1em;
+} 
+
+#titulo-nota {
+    font-family: monospace; 
+    font-size: 1rem;
+    grid-column: 1;
+    grid-row: 1;
+    border: 0.15rem solid;
+    border-color: black;
+    border-radius: 5px;
+    width: 200px;
+    color: black;
+}
+
+#cuerpo-nota {
+    font-size: 1rem;
+    grid-column: 1;
+    grid-row: 2 / 5;
+    border: 0.15rem solid;
+    border-color: black;
+    border-radius: 20px;
+    padding-top: 1rem;
+    color: black;
+    
+}
+
+#color-titulo {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#color-cuerpo {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#limpiar-btn {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#guardar-btn {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#notas {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 50%;
+} 
+
+.forma button {
+    border: 0.15rem solid;
+    border-color: black;
+    border-radius: 5px;
+    font-family: monospace; 
+    font-size: 1rem;
+    background: #d4ff8f;
+    width: 150px;
+    height: 40px;
+}
+
+input[type=color] {
+    opacity:0;
+    width: 150px;
+    height: 40px;
+    position:absolute;
+}
+
+input[type=color]:hover + button{
+    background:#fff;
+}
+
+button:hover{
+    background:#fff;
+}
+
+h2 {
+    font-weight: 900;
+    margin-bottom: 35px;
+}
+
+::placeholder {
+    font-family: monospace; 
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.franja {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.icono {
+    margin-top: 30px;
+}
+
+.nota {
+    padding: 1rem;
+}
