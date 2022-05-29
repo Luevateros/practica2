@@ -1,6 +1,6 @@
 body {
     font-family: monospace; 
-    background-image: linear-gradient(to right, white , #f1b462);
+    background-image: linear-gradient(to right, white , rgba(254,183,108,1));
 }
 
 .flex-container {
@@ -12,16 +12,20 @@ body {
     margin-top: 40px;
 }
 
-.flex-child {
-    background-color: #65a0ec;
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-}  
-
 .flex-child:first-child {
     margin-right: 10%;
     width: 400px;
     height: 240px;
+    background-color: #65a0ec;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+} 
+
+.flex-child .nota{
+    background-color: #65a0ec;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
 } 
 
 .forma {
